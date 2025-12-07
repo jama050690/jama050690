@@ -23,10 +23,10 @@ const changeMode = () => {
   if (isDark) {
     document.body.classList.add("dark_mode");
     document.body.classList.remove("light_mode");
-    modeIcon.src = "/images/Sun_mode.svg";
+    modeIcon.src = "./public/Sun_mode.svg";
   } else {
     document.body.classList.add("light_mode");
     document.body.classList.remove("dark_mode");
-    modeIcon.src = "/images/Dark_mode.svg";
+    modeIcon.src = "./public/Dark_mode.svg";
   }
 };
