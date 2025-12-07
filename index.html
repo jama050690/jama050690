@@ -3,31 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/output.css" />
     <title>My Sayt</title>
   </head>
   <body>
     <header class="my-5">
-      <div class="container flex items-center">
+      <div class="container flex items-center justify-between">
         <img
           class="w-[200px] h-[100px]"
           src="./my_resume/logo.png"
           alt="Logo"
         />
-        <ul class="flex w-[600px] justify-between">
-          <li class="">
-            <a href="#">About me</a>
-          </li>
-          <li class="">
-            <a href="#">Contact</a>
-          </li>
-          <li class="">
-            <a href="#">My projects</a>
-          </li>
-        </ul>
+        <div class="flex gap-[40px] items-center">
+          <ul class="flex justify-between gap-5">
+            <li class="cursor-pointer">
+              <a
+                class="text-2xl underline decoration-transparent hover:decoration-blue-500"
+                href="#"
+                >About me</a
+              >
+            </li>
+            <li class="cursor-pointer">
+              <a
+                class="text-2xl underline decoration-transparent hover:decoration-blue-500"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li class="cursor-pointer">
+              <a
+                class="text-2xl underline decoration-transparent hover:decoration-blue-500"
+                href="#"
+                >My projects</a
+              >
+            </li>
+          </ul>
+          <div class="flex gap-3 items-center">
+            <button
+              id="dark"
+              class="p-3 rounded-full cursor-pointer bg-[var(--bgc)]"
+            >
+              <img
+                id="modeIcon"
+                src="/my_resume/Dark_mode.svg"
+                class="w-6 h-6"
+              />
+            </button>
+
+            <button
+              class="login cursor-pointer flex items-center gap-3 rounded-full bg-[var(--login-color)] px-8 py-3 text-white"
+            >
+              Login
+              <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
-    <h1 class="text-3xl text-green-700">Hello EveryBody</h1>
 
     <script src="main.js"></script>
   </body>

@@ -9,12 +9,30 @@
   margin-right: auto;
 }
 :root {
+  --icon-color: #fff;
+  --text-white: #ffffff;
+  --text-color: #000;
   --bg: #ffffff;
+  --bgc: #fff;
+  --text-color-2: #555;
   --login-color: green;
+  --logo-filter: invert(0);
 }
 
 /* MAIN BODY */
 body {
   background: var(--bg);
   font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.dark_mode {
+  --icon-color: #000;
+  --text-white: #e81212;
+  --text-color: #fff;
+  --text-color-2: #fff;
+  --bg: #202c36;
+  --bgc: #2b3945;
+  --login-color: #38d39f;
+  --logo-filter: invert(1) brightness(200%);
 }
